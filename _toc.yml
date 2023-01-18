@@ -1,0 +1,33 @@
+format: jb-book
+root: README
+parts:
+  # outline of the entire curriculum and reader guide to the material
+  - caption: Preamble
+    chapters:
+      - file: part_0/preamble
+      - file: part_0/introduction
+
+  # Introduction to project management and reporting
+  - caption: Content Part 1
+    chapters:
+      - file: part_1/introduction
+        sections:
+          - file: part_1/chpt_1
+            sections:
+              - file: part_1/chpt_section_t1
+              - file: part_1/chpt_section_t2
+          - file: part_1/chpt_2
+
+  # The Practical Application of the Content
+  - caption: Content Part 2
+    chapters:
+      - file: part_2/introduction
+        sections:
+          - file: part_2/chpt_3
+          - file: part_2/chpt_4
+
+
+  # Appendices
+  - caption: Appendices
+    chapters:
+      - file: appendix/setup_jupyter

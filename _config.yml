@@ -1,0 +1,74 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: The PNEOM Curriculum Web Page
+author: Raynier A. van Egmond
+logo: images/logos/pneom_logo_header.svg
+email: raynierx@gmail.com
+copyright: '2022'
+
+description: The material for the Pacific Northwest Earth Observation and Monitoring curriculum.
+thumbnail: images/logos/pneom_logo_sidebar.svg
+tags:
+  domains: 
+    - remote sensing
+    - machine learning
+    - geospatial data
+  packages: 
+    - tbd
+
+# Execute the notebooks upon build
+execute:
+  execute_notebooks: cache
+  timeout: 600
+  allow_errors: True
+
+# Add a few extensions to help with parsing content
+parse:
+  myst_enable_extensions: # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - replacements
+    - smartquotes
+    - substitution
+    - tasklist
+
+sphinx:
+  config:
+    html_favicon: images/icons/favicon.svg
+    html_last_updated_fmt: '%-d %B %Y'
+    html_theme: sphinx_pythia_theme
+    html_permalinks_icon: '<i class="fas fa-link"></i>'
+    html_js_files: ['https://kit.fontawesome.com/b0054b5d5d.js'] # include personal fontawesome kit code
+    html_theme_options:
+      home_page_in_toc: true
+      repository_url: https://github.com/rayniervanegmond/pneom_curriculum # Online location of your book
+      repository_branch: main # Which branch of the repository should be used when creating links (optional)
+      use_issues_button: true
+      use_repository_button: true
+      use_edit_page_button: true
+      google_analytics_id: ""
+      github_url: https://github.com/rayniervanegmond/pneom_curriculum
+      twitter_url: https://twitter.com/renevanegmond
+      icon_links:
+        - name: YouTube
+          url: https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw
+          icon: fab fa-youtube-square
+          type: fontawesome
+      launch_buttons:
+        binderhub_url: http://binder.mypythia.org
+        notebook_interface: jupyterlab
+      extra_navbar: |
+        Theme by <a href="https://github.com/rayniervanegmond">the PNEOM program</a>.<br><br>
+      logo_link: https://github.com/rayniervanegmond/pneom_curriculum
+      navbar_links:
+        - name: Home
+          url: https://github.com/rayniervanegmond/pneom_curriculum
+      # footer_logos:
+      #   PNEOM: images/logos/pneom_logo_footer.svg
+      #   # Unidata: images/logos/Unidata_logo_horizontal_1200x300.svg
+      #   # UAlbany: images/logos/UAlbany-A2-logo-purple-gold.svg
