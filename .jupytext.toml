@@ -1,0 +1,4 @@
+# Install jupytext using conda
+# Always pair the .ipynb notebooks with the .md html_js_files
+# formats = "ipynb, md"
+formats = "ipynb, mst"

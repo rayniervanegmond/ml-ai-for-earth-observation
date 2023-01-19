@@ -4,28 +4,52 @@ parts:
   # outline of the entire curriculum and reader guide to the material
   - caption: Preamble
     chapters:
-      - file: part_0/preamble
       - file: part_0/introduction
+      - file: part_0/techguide
 
-  # Introduction to project management and reporting
-  - caption: Content Part 1
+  # Introduction to Earth Observation and Monitoring with ML/DL
+  - caption: Part 1 “Introduction to the field of Earth Observation and Monitoring
     chapters:
       - file: part_1/introduction
+      - file: part_1/chpt_1
         sections:
-          - file: part_1/chpt_1
-            sections:
-              - file: part_1/chpt_section_t1
-              - file: part_1/chpt_section_t2
-          - file: part_1/chpt_2
+          - file: part_1/chpt_section_t1
+          - file: part_1/chpt_section_t2
+      - file: part_1/chpt_2
+      - file: part_1/chpt_3
 
-  # The Practical Application of the Content
-  - caption: Content Part 2
+  # The Practical ML/DL geospatial data processing domain
+  - caption: Part 2 "ML/DL for Geospatial Data Processing
     chapters:
       - file: part_2/introduction
+      - file: part_2/chpt_4
+      - file: part_2/chpt_5
+      - file: part_2/chpt_6
+      - file: part_2/chpt_7
+      - file: part_2/chpt_8
         sections:
-          - file: part_2/chpt_3
-          - file: part_2/chpt_4
+          - file: part_2/chpt_8_1
+  
+  # The Use-cases for ML/DL geospatial data processing domain
+  - caption: Part 3 "Use-cases of ML/DL for Earth Observation and Monitoring"
+    chapters:
+      - file: part_3/introduction
+      - file: part_3/chpt_9
+      - file: part_3/chpt_A
+      - file: part_3/chpt_B
 
+  # The Project Management for ML/DL Earth Observation and Monitoring projects
+  - caption: Part 4 "A Project Management Framework for ML/DL projects in EOM"
+    chapters:
+      - file: part_4/introduction
+      - file: part_4/chpt_C
+      - file: part_4/chpt_D
+      - file: part_4/chpt_E
+
+  # Bibliography
+  - caption: Bibliography
+    chapters:
+      - file: appendix/bibliography
 
   # Appendices
   - caption: Appendices

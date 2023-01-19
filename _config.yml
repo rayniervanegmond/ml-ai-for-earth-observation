@@ -17,11 +17,12 @@ tags:
   packages: 
     - tbd
 
+
 # Execute the notebooks upon build
 execute:
-  execute_notebooks: cache
   timeout: 600
   allow_errors: True
+
 
 # Add a few extensions to help with parsing content
 parse:
@@ -37,8 +38,12 @@ parse:
     - substitution
     - tasklist
 
+bibtex_bibfiles:
+  - references.bib
+
 sphinx:
   config:
+    bibtex_reference_style: author_year
     html_favicon: images/icons/favicon.svg
     html_last_updated_fmt: '%-d %B %Y'
     html_theme: sphinx_pythia_theme
@@ -72,3 +77,5 @@ sphinx:
       #   PNEOM: images/logos/pneom_logo_footer.svg
       #   # Unidata: images/logos/Unidata_logo_horizontal_1200x300.svg
       #   # UAlbany: images/logos/UAlbany-A2-logo-purple-gold.svg
+  extra_extensions:
+    - sphinx_proof
