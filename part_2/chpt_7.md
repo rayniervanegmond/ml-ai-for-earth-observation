@@ -6,7 +6,7 @@
 ---
 
 
-## <span style="font-size:smaller;">Chapter Notebooks</span>
+## Chapter Notebooks
 
 notebook_template  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/notebook-template)
 : this is a link to a pneom curriculum notebooks template

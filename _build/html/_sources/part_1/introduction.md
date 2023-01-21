@@ -1,6 +1,6 @@
 # <span style="color:cornflowerblue;">Introduction</span>
 
-<span style="font-size:20pt">An Introduction and Outline</span>
+<span style="font-size:20pt">An Introduction and Outline of Earth Observation Applications</span>
 
 In this first chapter of the book we will discuss the nature of the Earth Observation and Monitoring field and how it poses sme interesting and challenging problems to the application of machine learning and deep learning. For those who come to the field with the intent to apply their ML/DL skills to some of the worlds most pressing problems; think of ecosystem preservation, biodiversity issues, health care and urban development, sustainability and climate change, but lack the knowledge of these fields this first part of the eBook is the entry point to the field.
 
@@ -14,7 +14,7 @@ In **chapter 2** we will shift focus from the underlying technology to the types
 
 For these applications we use specific types 
 
-## <span style="font-size:smaller;">Chapter Notebooks</span>
+## Chapter Notebooks
 
 notebook_template  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/notebook-template)
 : this is a link to a pneom curriculum notebooks template

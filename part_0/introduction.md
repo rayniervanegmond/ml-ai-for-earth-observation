@@ -74,7 +74,7 @@ This part of the book contains the following chapters:
 
 
 ## Running the Notebooks
-<!-B You can either run the notebook using [Binder](https://mybinder.org/) or on youC local machine. -->The material that reports on research is mostly provided in the for of Jupyter Notebooks. For instance the Jupyter Books on the PNEOM Curriculum and the Salish Sea Basin project will be executable books. The idea behind this is that you will be able to run all content on your local computer or on a cloud-infrastructure. The material will have `Run on Collab` and `Run on Binder` options or you can clone the books' repositories. 
+You can either run the notebook using [Binder](https://mybinder.org/) or on youC local machine. -->The material that reports on research is mostly provided in the for of Jupyter Notebooks. For instance the Jupyter Books on the PNEOM Curriculum and the Salish Sea Basin project will be executable books. The idea behind this is that you will be able to run all content on your local computer or on a cloud-infrastructure. The material will have `Run on Collab` and `Run on Binder` options or you can clone the books' repositories. 
 
 
 ### <span style="color:cornflowerblue;font-size:smaller;">Running on the Binder Hub</span>

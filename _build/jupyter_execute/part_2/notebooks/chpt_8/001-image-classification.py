@@ -1,18 +1,53 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# <img src="../../images/logos/pneom_logo.svg" width=150 alt="PNEOM Curriculum Logo"></img>
+# <img src="../../../images/logos/pneom_logo.svg" width=150 alt="PNEOM Curriculum Logo"></img>
 
 # 
-#  [to chapter introduction <i class="fa-solid fa-circle-arrow-up" style="margin-left:10px;color:teal;"></i>](../introduction)
+#  [to chapter introduction <i class="fa-solid fa-circle-arrow-up" style="margin-left:10px;color:teal;"></i>](../../chpt_8)
 # 
-#  [to chapter notebooks <i class="fa-solid fa-circle-arrow-left" style="margin-left:10px;color:teal;"></i>](../introduction.html#chapter-notebooks)
+#  [to chapter notebooks <i class="fa-solid fa-circle-arrow-left" style="margin-left:10px;color:teal;"></i>](../../chpt_8.html#chapter-notebooks)
 # 
 
 # 
-# # PNEOM Curriculum Notebook Template
+# # <span style="color:teal;font-size:20pt;">Simple Image Classification Project on Pretrained Model</span>
+
+# ## <span style="color:salmon;font-size:16pt;">Overview</span>
+
 # 
-# Next, title your notebook appropriately with a top-level Markdown header, `#`. Do not use this level header anywhere else in the notebook. Our book build process will use this title in the navbar, table of contents, etc. Keep it short, keep it descriptive. Follow this with a `---` cell to visually distinguish the transition to the prerequisites section.
+# The purpose of this notebook is to provide an example of a simple image classification project; the standard cats vs dogs (and then some) image classification. For the project we will use a pretrained network so we can focus on the main steps of the project template. The intent is not that you get away with understanding and all the Pytorch stuff but more that you understand the purpose of the main steps of the scaffolding.
+
+# ## <span style="color:salmon;font-size:16pt;">Methodology</span>
+
+# ### <span style="font-size:13pt;font-weight:bold;">Step 0: Environment and Libraries Setup</span>
+
+# The project uses the pretrained ResNet model that was trained on over 300K images and has learned to recognize 1000 different things in the images. Because we are training to classify the image based on what is displayed in it we end up with the classification of "a dog-image" or a "train-image". We will discuss in a different sample project <span style="color:red;font-weight:bold">\<REPLACE WITH ACTUAL REFERENCE\></span>. 
+# 
+# The inference is done on some of the hold-out validation images and also on images you can download from the internet yourself.
+
+# ## <span style="color:salmon;font-size:16pt;">Project Outline</span>
+
+# ### <span style="font-size:13pt;font-weight:bold;">Introduction</span>
+
+# ### <span style="font-size:13pt;font-weight:bold;">Step 0: Environment and Libraries Setup</span>
+
+# ### <span style="font-size:13pt;font-weight:bold;">Step 1. Data pre-processing, cleaning and preparation</span>
+
+# ### <span style="font-size:13pt;font-weight:bold;">Step 2. Dataset and dataloader definition</span>
+
+# ### <span style="font-size:13pt;font-weight:bold;">Step 3. Data pre-processing, cleaning and preparation</span>
+
+# ### <span style="font-size:13pt;font-weight:bold;">Step 4. deep learning model definition</span>
+
+# ### <span style="font-size:13pt;font-weight:bold;">Step 5. model training and evaluation</span>
+# 
+
+# 
+# ### <span style="font-size:13pt;font-weight:bold;">Step 6. model deployment and inference</span>
+
+# ## <span style="color:salmon;font-size:16pt;">Discussion</span>
+
+# ## <span style="color:salmon;font-size:16pt;">Bibliography</span>
 
 # ---
 

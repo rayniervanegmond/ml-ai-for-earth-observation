@@ -5,6 +5,7 @@ parts:
   - caption: Preamble
     chapters:
       - file: part_0/introduction
+      - file: part_0/acknowledgments
       - file: part_0/techguide
 
   # Introduction to Earth Observation and Monitoring with ML/DL
@@ -29,6 +30,9 @@ parts:
       - file: part_2/chpt_8
         sections:
           - file: part_2/chpt_8_1
+          - file: part_2/chpt_8_2   
+          - file: part_2/chpt_8_3   
+          - file: part_2/chpt_8_4          
   
   # The Use-cases for ML/DL geospatial data processing domain
   - caption: Part 3 "Use-cases of ML/DL for Earth Observation and Monitoring"
@@ -46,12 +50,9 @@ parts:
       - file: part_4/chpt_D
       - file: part_4/chpt_E
 
-  # Bibliography
-  - caption: Bibliography
-    chapters:
-      - file: appendix/bibliography
 
   # Appendices
   - caption: Appendices
     chapters:
+      - file: appendix/bibliography
       - file: appendix/setup_jupyter

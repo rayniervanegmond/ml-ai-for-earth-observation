@@ -1,4 +1,3 @@
-
 <img style="margin-bottom:20px" src="_images/pneom_logo_sidebar.svg" alt="thumbnail" width="300"/>
 
 # <span style="margin-bottom:20px">Welcome to the "Machine Learning and Deep Learning for Earth Observation and Monitoring" Book</span>

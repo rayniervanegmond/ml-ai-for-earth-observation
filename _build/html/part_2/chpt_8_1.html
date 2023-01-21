@@ -57,7 +57,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.svg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction" href="../part_3/introduction.html" />
+    <link rel="next" title="Chapter 8.2 - An annotated sample project for image classification" href="chpt_8_2.html" />
     <link rel="prev" title="Chapter 8 - Using Deep Learning methods-Introduction and applications" href="chpt_8.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -164,6 +164,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../part_0/introduction.html">
    A Reader Guide to “Machine Learning and Deep Learning for Earth Observation and Monitoring”
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_0/acknowledgments.html">
+   Acknowledgements
   </a>
  </li>
  <li class="toctree-l1">
@@ -284,6 +289,34 @@ const thebe_selector_output = ".output, .cell_output"
      </span>
     </a>
    </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="chpt_8_2.html">
+     <span style="color:cornflowerblue;">
+      Chapter 8.2 - An annotated sample project for image classification
+     </span>
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="notebooks/chpt_8/000-project-scaffolding.html">
+       <span style="color:teal;font-size:20pt;">
+        PNEOM Deep Learning Project Scaffolding
+       </span>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="notebooks/chpt_8/001-image-classification.html">
+       <span style="color:teal;font-size:20pt;">
+        Simple Image Classification Project on Pretrained Model
+       </span>
+      </a>
+     </li>
+    </ul>
+   </li>
   </ul>
  </li>
 </ul>
@@ -359,7 +392,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Bibliography
+  Appendices
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -370,13 +403,6 @@ const thebe_selector_output = ".output, .cell_output"
    </span>
   </a>
  </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Appendices
- </span>
-</p>
-<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../appendix/setup_jupyter.html">
    The Setup of the Jupyter Environment
@@ -488,20 +514,13 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-bibliography-references-extension">
-   The bibliography references extension:
+  <a class="reference internal nav-link" href="#deep-learning-project-scaffolding">
+   Deep Learning Project Scaffolding
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#referencing-glued-visualizations-from-other-page">
-   referencing glued visualizations from other page
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#span-style-font-size-smaller-chapter-notebooks-span">
-   <span style="font-size:smaller;">
-    Chapter Notebooks
-   </span>
+  <a class="reference internal nav-link" href="#chapter-notebooks">
+   Chapter Notebooks
   </a>
  </li>
 </ul>
@@ -533,24 +552,15 @@ const thebe_selector_output = ".output, .cell_output"
 <dt><font color="#FF5733;">6. model deployment and inference</font></dt><dd><p>the final stage is where the trained model is saved and used for doing its actual operational task of making inferences or creating generative outputs.</p>
 </dd>
 </dl>
-<div class="section" id="the-bibliography-references-extension">
-<h2>The bibliography references extension:<a class="headerlink" href="#the-bibliography-references-extension" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>It seems impossible to keep the bibliography collection separate for each chapter. There is only one bibliography per full project/book. It would be nice if we could make different bibliographies per chapter. It seems there is a way to do this but according to the documentation this is complex. For now we will create a single book-wide bibliography.</p>
-<p>Here is another nifty citation in a different chapter document <span id="id1">[<a class="reference internal" href="../appendix/bibliography.html#id2" title="Edward Nelson. Radically Elementary Probability Theory. Princeton University Press, 1987.">Nelson, 1987</a>]</span>. It refers into the book wide bibliography references collection at the end of the book.</p>
-</div>
-<div class="section" id="referencing-glued-visualizations-from-other-page">
-<h2>referencing glued visualizations from other page<a class="headerlink" href="#referencing-glued-visualizations-from-other-page" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>This is an example of pasting a glued output as a block:</p>
-<div class="cell_output docutils container">
-<img alt="_build/jupyter_execute/part_2/techguide_11_0.png" src="_build/jupyter_execute/part_2/techguide_11_0.png" />
-</div>
-<p>This has an issue with the referencing to the source document. Manual correction does pickup the image from the other document where it is generated.</p>
+<div class="section" id="deep-learning-project-scaffolding">
+<h2>Deep Learning Project Scaffolding<a class="headerlink" href="#deep-learning-project-scaffolding" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
+<p>Since the steps outlined above occur in just about every deep learning project we’ll use it as the outline for all the (starter) projects we will be writing in this curriculum. In the notebooks below we will use these steps as the main components of the processing we will do.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="span-style-font-size-smaller-chapter-notebooks-span">
-<h2><span style="font-size:smaller;">Chapter Notebooks</span><a class="headerlink" href="#span-style-font-size-smaller-chapter-notebooks-span" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
+<div class="section" id="chapter-notebooks">
+<h2>Chapter Notebooks<a class="headerlink" href="#chapter-notebooks" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
 <dl class="simple myst">
-<dt>notebook_template  <a class="reference internal" href="notebooks/notebook-template.html"><span class="doc std std-doc"><i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i></span></a></dt><dd><p>this is a link to a pneom curriculum notebooks template</p>
+<dt>deep learning project template  <a class="reference internal" href="notebooks/chpt_8/000-project-scaffolding.html"><span class="doc std std-doc"><i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i></span></a></dt><dd><p>The purpose of this notebook is to provide an executable example of a Jupyter Notebook that you can use for all your Pytorch based deep learning projects. As mentioned in chapter 8.1 of the curriculum moist projects will follow the same steps. They are simply part of every machine learning or deep learning project.</p>
 </dd>
 </dl>
 </div>
@@ -565,16 +575,16 @@ const thebe_selector_output = ".output, .cell_output"
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "pytorch13"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "pytorch13",
             path: "./part_2"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'pytorch13'</script>
 
               </div>
               <!-- Previous / next buttons -->
@@ -586,10 +596,10 @@ const thebe_selector_output = ".output, .cell_output"
             <p class="prev-next-title"><span style="color:cornflowerblue;">Chapter 8 - Using Deep Learning methods-Introduction and applications </span></p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../part_3/introduction.html" title="next page">
+    <a class='right-next' id="next-link" href="chpt_8_2.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span style="color:cornflowerblue;">Introduction</span></p>
+        <p class="prev-next-title"><span style="color:cornflowerblue;">Chapter 8.2 - An annotated sample project for image classification </span></p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -700,7 +710,7 @@ const thebe_selector_output = ".output, .cell_output"
         
           By Raynier A. van Egmond.
         
-          Last updated on 19 January 2023.
+          Last updated on 20 January 2023.
         </p>
       </div>
     </div>

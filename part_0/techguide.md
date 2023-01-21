@@ -7,7 +7,7 @@ jupytext:
 kernelspec:
   display_name: Python 3
   language: python
-  name: python3
+  name: pytorch13
 ---
 
 # How To Use This Template
@@ -280,14 +280,15 @@ y = np.sin(x)
 fig, ax = plt.subplots()
 ax.plot(x, y, 'b-', linewidth=2)
 
-glue("glued_fig", fig, display=False)
+glue("glued_fig2", fig, display=False)
 ```
 
-This is an inline glue example of a figure: {glue:}`glued_fig`.
+This is an inline glue example of a figure: {glue:}`glued_fig2`.
 
 This is an example of pasting a glued output as a block:
-```{glue:} glued_fig
+```{glue:} glued_fig2
 ```
+
 
 ### Gluing across notebooks and documents
 

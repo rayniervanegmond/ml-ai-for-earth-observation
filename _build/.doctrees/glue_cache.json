@@ -8,6 +8,22 @@
           "mime_prefix": "application/papermill.record/"
         },
         "filenames": {
+          "image/png": "/home/raynier/Development/workspaces/jupyter-books/ml-ai-for-earth-observation/_build/jupyter_execute/part_0/techguide_9_0.png"
+        }
+      },
+      "data": {
+        "application/papermill.record/text/plain": "<Figure size 640x480 with 1 Axes>",
+        "application/papermill.record/image/png": null
+      }
+    },
+    "glued_fig2": {
+      "output_type": "display_data",
+      "metadata": {
+        "scrapbook": {
+          "name": "glued_fig2",
+          "mime_prefix": "application/papermill.record/"
+        },
+        "filenames": {
           "image/png": "/home/raynier/Development/workspaces/jupyter-books/ml-ai-for-earth-observation/_build/jupyter_execute/part_0/techguide_11_0.png"
         }
       },

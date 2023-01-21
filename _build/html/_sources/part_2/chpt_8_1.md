@@ -7,7 +7,7 @@ jupytext:
 kernelspec:
   display_name: Python 3
   language: python
-  name: python3
+  name: pytorch13
 ---
 # <span style="color:cornflowerblue;">Chapter 8.1 - Illustrating the workings of the Pytorch environment </span>
 
@@ -33,29 +33,13 @@ These illustrations will get you familiar with the general approach of using the
 <font color="#FF5733;">6. model deployment and inference</font>
 : the final stage is where the trained model is saved and used for doing its actual operational task of making inferences or creating generative outputs.
 
+## Deep Learning Project Scaffolding
 
-
-## The bibliography references extension:
-It seems impossible to keep the bibliography collection separate for each chapter. There is only one bibliography per full project/book. It would be nice if we could make different bibliographies per chapter. It seems there is a way to do this but according to the documentation this is complex. For now we will create a single book-wide bibliography.
-
-Here is another nifty citation in a different chapter document {cite}`nelson1987`. It refers into the book wide bibliography references collection at the end of the book.
-
-## referencing glued visualizations from other page 
-
-
-This is an example of pasting a glued output as a block:
-```{glue:} glued_fig
-```
-
-This has an issue with the referencing to the source document. Manual correction does pickup the image from the other document where it is generated.
-
-```{glue:} glued_fig
-:doc: chpt_8_1
-```
+Since the steps outlined above occur in just about every deep learning project we'll use it as the outline for all the (starter) projects we will be writing in this curriculum. In the notebooks below we will use these steps as the main components of the processing we will do. 
 
 ---
 
-## <span style="font-size:smaller;">Chapter Notebooks</span>
+## Chapter Notebooks
 
-notebook_template  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/notebook-template)
-: this is a link to a pneom curriculum notebooks template
+deep learning project template  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/000-project-scaffolding)
+: The purpose of this notebook is to provide an executable example of a Jupyter Notebook that you can use for all your Pytorch based deep learning projects. As mentioned in chapter 8.1 of the curriculum moist projects will follow the same steps. They are simply part of every machine learning or deep learning project.

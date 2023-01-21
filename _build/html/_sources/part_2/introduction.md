@@ -1,7 +1,7 @@
 # <span style="color:cornflowerblue;">Introduction</span>
 
 
-<span style="font-size:20pt">An Introduction and Outline</span>
+<span style="font-size:20pt">An Introduction and Outline of Machine Learning and Deep Learning for EOM</span>
 
 ---
 
