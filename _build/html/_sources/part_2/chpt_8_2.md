@@ -16,5 +16,6 @@ In this chapter we will look at a sample image classification project that is ma
 ---
 ## Chapter Notebooks
 
-simple image classification project  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/001-image-classification)
-: The purpose of this notebook is to provide a simple illustrative example of a full image classification project. Its main purpose is to show how the project scaffolding template is used and what the main steps in a project look like. It is more heavily annotated than regular project notebooks would be.
+
+landscape cover or landscape use image classification project  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/002-image-classification)
+: The purpose of this notebook is to show how we can use deep learning classification techniques to identify images or "chips" (a part of an input image used to classify parts of a larger image) to be of a specific kind; in this case what type of landscape cover or landscape use they represent.

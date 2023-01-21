@@ -57,7 +57,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.svg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Chapter 8.1 - Illustrating the workings of the Pytorch environment" href="chpt_8_1.html" />
+    <link rel="next" title="Chapter 8.1 - An annotated sample project for image classification" href="chpt_8_1.html" />
     <link rel="prev" title="Chapter 7 - Using Machine Learning methods-Introduction and applications" href="chpt_7.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -285,7 +285,7 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="chpt_8_1.html">
      <span style="color:cornflowerblue;">
-      Chapter 8.1 - Illustrating the workings of the Pytorch environment
+      Chapter 8.1 - An annotated sample project for image classification
      </span>
     </a>
    </li>
@@ -299,14 +299,14 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="chpt_8_3.html">
      <span style="color:cornflowerblue;">
-      Chapter 8.3 - An annotated sample project for landscape type classification
+      Chapter 8.3 - A discussion of different types of classification
      </span>
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="chpt_8_4.html">
      <span style="color:cornflowerblue;">
-      Chapter 8.4 - …
+      Chapter 8.4 - An annotated sample project for landscape type image classification
      </span>
     </a>
    </li>
@@ -547,10 +547,13 @@ const thebe_selector_output = ".output, .cell_output"
 <p>In this chapter we will begin the discussion of deep learning with an introduction into the underlying data constructs called Artificial Neural Networks (abbrev. ANN). We will discuss their structure and how various architectures of such ANN exhibit best performances for specific problems. We will explore the interesting field of deep learning through a series of Jupyter Notebooks that illustrate the concepts and how we can use deep learning using the Pytorch ecosystem of tools, libraries and datasets.</p>
 <div class="section" id="deep-learning-for-classification">
 <h3>Deep Learning for classification<a class="headerlink" href="#deep-learning-for-classification" title="Permalink to this headline"><i class="fas fa-link"></i></a></h3>
-<p>In the field of deep learning the most used application is that of supervised learning for classification purposes. In chapters <a class="reference internal" href="chpt_8_3.html"><span class="doc std std-doc">A discussion of classification for earth observation</span></a> we will take a deep dive into the various types of classification that we can use to do to build Earth Observation and Monitoring solutions. Based on the type of classification you want to perform there are different methods to apply. The following types of supervised classifications will be addressed in these chapters:</p>
+<p>In the field of deep learning the most used application is that of supervised learning for classification purposes. In the subsequent chapters we will take a deep dive into the various types of classification that we can use to do to build Earth Observation and Monitoring solutions. Based on the type of classification you want to perform there are different methods to apply. The following types of supervised classifications will be addressed in these chapters:</p>
 <ul class="simple">
-<li><p><strong>image classification</strong>: this concerns the classification of an entire image (or part of an image) or some other raster-based dataset (part) using a neural network. The primary characteristic of this type of problem is that the image/datafield itself has to be classified. An example would be to classify an image as a “dog-image” or a “cat-image”. <a class="reference internal" href="chpt_8_3.html"><span class="doc std std-doc">An annotated sample project for landscape type classification</span></a></p></li>
-<li><p><strong>object identification</strong>: this concerns the case where we want to detect the occurrence of a specific object in the frame of the image and we need to draw a bounding box around the object. We identify, classify and indicate objects inside the image. So if we take the previous example, we would now draw a box around the actual “dog-inside-the-image”. Some algorithms are able to detect and indicate multiple objects inside a single image. This would then draw boxes around each dog and each cat inside the image. <a class="reference internal" href="chpt_8_4.html"><span class="doc std std-doc">An annotated sample project for land use object detection</span></a></p></li>
+<li><p><strong>image classification</strong>: this concerns the classification of an entire image (or part of an image) or some other raster-based dataset (part) using a neural network. The primary characteristic of this type of problem is that the image/datafield itself has to be classified. An example would be to classify an image as a “dog-image” or a “cat-image”. <a class="reference internal" href="chpt_8_2.html"><span class="doc std std-doc">An annotated sample project for image classification</span></a> and <a class="reference internal" href="chpt_8_4.html"><span class="doc std std-doc">An annotated sample project for landscape type classification</span></a></p></li>
+<li><p><strong>object identification</strong>: this concerns the case where we want to detect the occurrence of a specific object in the frame of the image and we need to draw a bounding box around the object. We identify, classify and indicate objects inside the image. So if we take the previous example, we would now draw a box around the actual “dog-inside-the-image”. Some algorithms are able to detect and indicate multiple objects inside a single image. This would then draw boxes around each dog and each cat inside the image. <a class="reference internal" href="chpt_8_5.html"><span class="doc std std-doc">An annotated sample project for land use object detection</span></a></p></li>
+<li><p><strong>semantic segmentation</strong>: this concerns the case where we want to use semantic segmentation to create pixel level classifications in satellite images. The application of semantic segmentation is a very important type of processing that often used for monitoring of land cover where the number of pixels in each class is compared between images of the same area of interest across time. The technique can also be used to see how the land cover changes in nature; say from forest to urbanized areas. <a class="reference internal" href="chpt_8_6.html"><span class="doc std std-doc">An annotated sample project for land use area semantic segmentation</span></a></p></li>
+<li></li>
+<li><p><strong>semantic instance identification</strong>: this concerns the case where we want to use semantic segmentation to create pixel level classifications in satellite images but also for each different instance of such objects we will indicate/draw their pixels in a different color. <a class="reference internal" href="chpt_8_7.html"><span class="doc std std-doc">An annotated sample project for land use area semantic instance segmentation</span></a></p></li>
 </ul>
 </div>
 <div class="section" id="deep-learning-for-natural-language-processing">
@@ -563,19 +566,30 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="chapter-table-of-content">
 <h2>Chapter Table of Content<a class="headerlink" href="#chapter-table-of-content" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="chpt_8_1.html"><span class="doc std std-doc">Discussing the Pytorch deep learning project template</span></a></p></li>
-<li><p><a class="reference internal" href="chpt_8_2.html"><span class="doc std std-doc">An annotated sample project for image classification</span></a></p></li>
-<li><p><a class="reference internal" href="chpt_8_3.html"><span class="doc std std-doc">An annotated sample project for landscape type classification</span></a></p></li>
-<li><p><a class="reference internal" href="chpt_8_4.html"><span class="doc std std-doc">An annotated sample project for land use object detection</span></a></p></li>
+<li><p><a class="reference internal" href="chpt_8_2.html"><span class="doc std std-doc">Discussing the Pytorch deep learning project template</span></a></p></li>
+<li><p><a class="reference internal" href="chpt_8_2.html"><span class="doc std std-doc">An annotated sample project for simple image classification</span></a></p></li>
+<li><p><a class="reference internal" href="chpt_8_3.html"><span class="doc std std-doc">Discussing of different classification types</span></a></p></li>
+<li><p><a class="reference internal" href="chpt_8_4.html"><span class="doc std std-doc">An annotated sample project for landscape type image classification</span></a></p></li>
+<li><p><a class="reference internal" href="chpt_8_5.html"><span class="doc std std-doc">An annotated sample project for land use object identification</span></a></p></li>
+<li><p><a class="reference internal" href="chpt_8_6.html"><span class="doc std std-doc">An annotated sample project for semantic segmentation of LCLU areas</span></a></p></li>
+<li><p><a class="reference internal" href="chpt_8_7.html"><span class="doc std std-doc">An annotated sample project for semantic instance segmentation of LCLU areas</span></a></p></li>
 </ul>
 </div>
 <hr class="docutils" />
 <div class="section" id="chapter-notebooks">
 <h2>Chapter Notebooks<a class="headerlink" href="#chapter-notebooks" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
 <dl class="simple myst">
-<dt>deep learning project template  <a class="reference internal" href="notebooks/chpt_8/000-project-scaffolding.html"><span class="doc std std-doc"><i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i></span></a></dt><dd><p>The purpose of this notebook is to provide an executable example of a Jupyter Notebook that you can use for all your Pytorch based deep learning projects. As mentioned in chapter 8.1 of the curriculum moist projects will follow the same steps. They are simply part of every machine learning or deep learning project.</p>
+<dt>deep learning project template  <a class="reference internal" href="notebooks/chpt_8/001-project-scaffolding.html"><span class="doc std std-doc"><i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i></span></a></dt><dd><p>The purpose of this notebook is to provide an executable example of a Jupyter Notebook that you can use for all your Pytorch based deep learning projects. As mentioned in chapter 8.1 of the curriculum moist projects will follow the same steps. They are simply part of every machine learning or deep learning project.</p>
 </dd>
-<dt>simple image classification project  <a class="reference internal" href="notebooks/chpt_8/001-image-classification.html"><span class="doc std std-doc"><i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i></span></a></dt><dd><p>The purpose of this notebook is to provide a simple illustrative example of a full image classification project. Its main purpose is to show how the project scaffolding template is used and what the main steps in a project look like. It is more heavily annotated than regular project notebooks wold be.</p>
+<dt>simple image classification project  <a class="reference internal" href="notebooks/chpt_8/002-image-classification.html"><span class="doc std std-doc"><i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i></span></a></dt><dd><p>The purpose of this notebook is to provide a simple illustrative example of a full image classification project. Its main purpose is to show how the project scaffolding template is used and what the main steps in a project look like. It is more heavily annotated than regular project notebooks wold be.</p>
+</dd>
+<dt>landscape cover or landscape use image classification project  <a class="reference internal" href="notebooks/chpt_8/004-lclu-img-type-classification.html"><span class="doc std std-doc"><i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i></span></a></dt><dd><p>The purpose of this notebook is to show how we can use deep learning classification techniques to identify images or “chips” (a part of an input image used to classify parts of a larger image) to be of a specific kind; in this case what type of landscape cover or landscape use they represent.</p>
+</dd>
+<dt>landscape use semantic segmentation project  <a class="reference internal" href="notebooks/chpt_8/005-lu-object-identification.html"><span class="doc std std-doc"><i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i></span></a></dt><dd><p>The purpose of this notebook is to show how we deep learning to locate and identify different objects (for instance building, ships or cars) in a remote sensing image. The main purpose is to identify if objects in the image are of a known class and then for each instance of these object classes draw a bounding box around it.</p>
+</dd>
+<dt>landscape use semantic segmentation project  <a class="reference internal" href="notebooks/chpt_8/006-lclu-area-segmentation.html"><span class="doc std std-doc"><i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i></span></a></dt><dd><p>The purpose of this notebook is to show how we can use semantic segmentation to create pixel level classifications in satellite images. The application of semantic segmentation is a very important type of processing that often used for monitoring of land cover where the number of pixels in each class is compared between images of the same area of interest across time. The technique can also be used to see how the land cover changes in nature; say from forest to urbanized areas.</p>
+</dd>
+<dt>landscape use semantic instance segmentation project  <a class="reference internal" href="notebooks/chpt_8/007-lclu-instance-segmentation.html"><span class="doc std std-doc"><i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i></span></a></dt><dd><p>The purpose of this notebook is to show how we can use semantic segmentation to create pixel level classifications in satellite images but now for each different instance of such objects we will indicate/draw their pixels in a different color.</p>
 </dd>
 </dl>
 </div>
@@ -616,7 +630,7 @@ const thebe_selector_output = ".output, .cell_output"
     <a class='right-next' id="next-link" href="chpt_8_1.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span style="color:cornflowerblue;">Chapter 8.1 - Illustrating the workings of the Pytorch environment </span></p>
+        <p class="prev-next-title"><span style="color:cornflowerblue;">Chapter 8.1 - An annotated sample project for image classification </span></p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

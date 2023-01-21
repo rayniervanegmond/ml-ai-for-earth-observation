@@ -9,12 +9,13 @@ kernelspec:
   language: python
   name: pytorch13
 ---
-# <span style="color:cornflowerblue;">Chapter 8.3 - An annotated sample project for landscape type classification </span>
+# <span style="color:cornflowerblue;">Chapter 8.3 - A discussion of different types of classification </span>
 
-PROVIDE MATERIAL
+In this chapter we will provide a discussion of the different types of classification we encounter in our work with earth observation data. The in the next few chapters we will provide discussion and an annotated Jupyter Notebook for each of the types of classification using EOM data. 
+
 
 ---
+
 ## Chapter Notebooks
 
-landscape cover or landscape use classification project  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/003-lclu-type-classification)
-: The purpose of this notebook is to show how we can use deep learning classification techniques to identify images or "chips" (a part of an input image used to classify parts of a larger image) to be of a specific kind; in this case what type of landscape cover or landscape use they represent.
+No notebooks

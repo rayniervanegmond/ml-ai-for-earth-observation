@@ -20,26 +20,46 @@ In this chapter we will begin the discussion of deep learning with an introducti
 
 ### Deep Learning for classification
 
-In the field of deep learning the most used application is that of supervised learning for classification purposes. In chapters [A discussion of classification for earth observation](chpt_8_3.md) we will take a deep dive into the various types of classification that we can use to do to build Earth Observation and Monitoring solutions. Based on the type of classification you want to perform there are different methods to apply. The following types of supervised classifications will be addressed in these chapters:
+In the field of deep learning the most used application is that of supervised learning for classification purposes. In the subsequent chapters we will take a deep dive into the various types of classification that we can use to do to build Earth Observation and Monitoring solutions. Based on the type of classification you want to perform there are different methods to apply. The following types of supervised classifications will be addressed in these chapters:
 
-* **image classification**: this concerns the classification of an entire image (or part of an image) or some other raster-based dataset (part) using a neural network. The primary characteristic of this type of problem is that the image/datafield itself has to be classified. An example would be to classify an image as a "dog-image" or a "cat-image". [An annotated sample project for landscape type classification](chpt_8_3.md)
-* **object identification**: this concerns the case where we want to detect the occurrence of a specific object in the frame of the image and we need to draw a bounding box around the object. We identify, classify and indicate objects inside the image. So if we take the previous example, we would now draw a box around the actual "dog-inside-the-image". Some algorithms are able to detect and indicate multiple objects inside a single image. This would then draw boxes around each dog and each cat inside the image. [An annotated sample project for land use object detection](chpt_8_4.md)
+* **image classification**: this concerns the classification of an entire image (or part of an image) or some other raster-based dataset (part) using a neural network. The primary characteristic of this type of problem is that the image/datafield itself has to be classified. An example would be to classify an image as a "dog-image" or a "cat-image". [An annotated sample project for image classification](chpt_8_2.md) and [An annotated sample project for landscape type classification](chpt_8_4.md)
+
+* **object identification**: this concerns the case where we want to detect the occurrence of a specific object in the frame of the image and we need to draw a bounding box around the object. We identify, classify and indicate objects inside the image. So if we take the previous example, we would now draw a box around the actual "dog-inside-the-image". Some algorithms are able to detect and indicate multiple objects inside a single image. This would then draw boxes around each dog and each cat inside the image. [An annotated sample project for land use object detection](chpt_8_5.md)
+
+* **semantic segmentation**: this concerns the case where we want to use semantic segmentation to create pixel level classifications in satellite images. The application of semantic segmentation is a very important type of processing that often used for monitoring of land cover where the number of pixels in each class is compared between images of the same area of interest across time. The technique can also be used to see how the land cover changes in nature; say from forest to urbanized areas. [An annotated sample project for land use area semantic segmentation](chpt_8_6.md)
+* 
+* **semantic instance identification**: this concerns the case where we want to use semantic segmentation to create pixel level classifications in satellite images but also for each different instance of such objects we will indicate/draw their pixels in a different color. [An annotated sample project for land use area semantic instance segmentation](chpt_8_7.md)
 ### Deep Learning for natural language processing
 
 ### 
 
 ## Chapter Table of Content
 
-* [Discussing the Pytorch deep learning project template](chpt_8_1.md)
-* [An annotated sample project for image classification](chpt_8_2.md)
-* [An annotated sample project for landscape type classification](chpt_8_3.md)
-* [An annotated sample project for land use object detection](chpt_8_4.md)
+* [Discussing the Pytorch deep learning project template](chpt_8_2.md)
+* [An annotated sample project for simple image classification](chpt_8_2.md)
+* [Discussing of different classification types](chpt_8_3.md)
+* [An annotated sample project for landscape type image classification](chpt_8_4.md)
+* [An annotated sample project for land use object identification](chpt_8_5.md)
+* [An annotated sample project for semantic segmentation of LCLU areas](chpt_8_6.md)
+* [An annotated sample project for semantic instance segmentation of LCLU areas](chpt_8_7.md)
 
 ---
 ## Chapter Notebooks
 
-deep learning project template  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/000-project-scaffolding)
+deep learning project template  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/001-project-scaffolding)
 : The purpose of this notebook is to provide an executable example of a Jupyter Notebook that you can use for all your Pytorch based deep learning projects. As mentioned in chapter 8.1 of the curriculum moist projects will follow the same steps. They are simply part of every machine learning or deep learning project.
 
-simple image classification project  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/001-image-classification)
+simple image classification project  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/002-image-classification)
 : The purpose of this notebook is to provide a simple illustrative example of a full image classification project. Its main purpose is to show how the project scaffolding template is used and what the main steps in a project look like. It is more heavily annotated than regular project notebooks wold be.
+
+landscape cover or landscape use image classification project  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/004-lclu-img-type-classification)
+: The purpose of this notebook is to show how we can use deep learning classification techniques to identify images or "chips" (a part of an input image used to classify parts of a larger image) to be of a specific kind; in this case what type of landscape cover or landscape use they represent.
+
+landscape use semantic segmentation project  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/005-lu-object-identification)
+: The purpose of this notebook is to show how we deep learning to locate and identify different objects (for instance building, ships or cars) in a remote sensing image. The main purpose is to identify if objects in the image are of a known class and then for each instance of these object classes draw a bounding box around it.
+
+landscape use semantic segmentation project  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/006-lclu-area-segmentation)
+: The purpose of this notebook is to show how we can use semantic segmentation to create pixel level classifications in satellite images. The application of semantic segmentation is a very important type of processing that often used for monitoring of land cover where the number of pixels in each class is compared between images of the same area of interest across time. The technique can also be used to see how the land cover changes in nature; say from forest to urbanized areas. 
+
+landscape use semantic instance segmentation project  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/007-lclu-instance-segmentation)
+: The purpose of this notebook is to show how we can use semantic segmentation to create pixel level classifications in satellite images but now for each different instance of such objects we will indicate/draw their pixels in a different color. 

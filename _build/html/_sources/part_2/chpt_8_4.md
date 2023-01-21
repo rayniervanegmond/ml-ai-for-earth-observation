@@ -9,12 +9,12 @@ kernelspec:
   language: python
   name: pytorch13
 ---
-# <span style="color:cornflowerblue;">Chapter 8.4 - ...</span>
+# <span style="color:cornflowerblue;">Chapter 8.4 - An annotated sample project for landscape type image classification </span>
 
 PROVIDE MATERIAL
 
 ---
 ## Chapter Notebooks
 
-landscape cover or landscape use semantic segmentation project  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/003-lclu-type-classification)
-: The purpose of this notebook is to show how we can use semantic segmentation to create pixel level classifications in satellite images. The application of semantic segmentation is a very important type of processing that often used for monitoring of land cover where the number of pixels in each class is compared between images of the same area of interest across time. The technique can also be used to see how the land cover changes in nature; say from forest to urbanized areas. 
+landscape cover or landscape use image classification project  [<i class="fa-solid fa-arrow-circle-right" style="margin-left:10px;color:teal;"></i>](notebooks/chpt_8/004-lclu-img-type-classification)
+: The purpose of this notebook is to show how we can use deep learning classification techniques to identify images or "chips" (a part of an input image used to classify parts of a larger image) to be of a specific kind; in this case what type of landscape cover or landscape use they represent.
